@@ -1,1 +1,1 @@
-# ynslmz.github.io
+# [ynslmz.github.io](https://ynslmz.github.io)
