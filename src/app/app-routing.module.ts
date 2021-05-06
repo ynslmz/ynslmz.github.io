@@ -4,7 +4,12 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [{
   path: '',
-  component: LayoutComponent
+  component: LayoutComponent,
+  children: [{
+    path: '',
+    loadChildren: () => import('./identity/identity.module')
+      .then(m => m.IdentityModule)
+  }]
 }];
 
 @NgModule({

@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Welcome to ynslmz.github.io';
+  title = 'Yunus ÖLMEZ';
   constructor(title: Title) {
     title.setTitle(this.title);
   }

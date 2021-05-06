@@ -1,0 +1,24 @@
+ul {
+  display: block;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+}
+
+.icon {
+  margin: 0.5em;
+}
+
+.icon-link {
+  border: 1px solid #dddddd;
+  border-radius: 100%;
+  font-size: 1.75em;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  display: block;
+}
