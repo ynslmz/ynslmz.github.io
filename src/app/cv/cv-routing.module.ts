@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IdentityComponent } from './identity/identity.component';
+import { MyCvComponent } from './pages/my-cv/my-cv.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: IdentityComponent,
+    component: MyCvComponent,
     data: {
-      animation: 'IdentityPage'
+      animation: 'CvPage'
     }
   }
 ];
@@ -16,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class IdentityRoutingModule { }
+export class CvRoutingModule { }

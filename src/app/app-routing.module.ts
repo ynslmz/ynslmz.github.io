@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
 
-const routes: Routes = [{
-  path: '',
-  component: LayoutComponent,
-  children: [{
+const routes: Routes = [
+  {
     path: '',
     loadChildren: () => import('./identity/identity.module')
       .then(m => m.IdentityModule)
-  }]
-}];
+  },
+  {
+    path: 'my-cv',
+    loadChildren: () => import('./cv/cv.module')
+      .then(m => m.CvModule)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
