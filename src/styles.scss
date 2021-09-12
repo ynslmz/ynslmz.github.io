@@ -1,6 +1,9 @@
 /* Importing Bootstrap SCSS file. */
+$backgroud-color: #303030;
+$text-color: #fff;
 
 body {
   height: 100vh;
   width: 100%;
+  background-color: $backgroud-color;
 }
