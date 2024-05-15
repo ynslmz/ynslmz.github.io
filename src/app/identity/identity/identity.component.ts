@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-identity',
   templateUrl: './identity.component.html',
   styleUrls: ['./identity.component.scss'],
 })
-export class IdentityComponent implements OnInit {
-  constructor() { }
+export class IdentityComponent {
+  constructor() {}
   currentYear = new Date().getFullYear();
-  ngOnInit(): void { }
 
   links = [
     {
@@ -34,6 +33,6 @@ export class IdentityComponent implements OnInit {
     {
       url: 'mailto:yns4832@gmail.com',
       icon: 'bi bi-envelope',
-    }
-  ]
+    },
+  ];
 }
