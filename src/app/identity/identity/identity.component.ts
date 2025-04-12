@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-identity',
-  templateUrl: './identity.component.html',
-  styleUrls: ['./identity.component.scss'],
+    selector: 'app-identity',
+    templateUrl: './identity.component.html',
+    styleUrls: ['./identity.component.scss'],
+    standalone: false
 })
 export class IdentityComponent {
   constructor() {}

@@ -9,17 +9,17 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.2.13",
-    "@angular/common": "^18.2.13",
-    "@angular/compiler": "^18.2.13",
-    "@angular/core": "^18.2.13",
-    "@angular/forms": "^18.2.13",
-    "@angular/platform-browser": "^18.2.13",
-    "@angular/platform-browser-dynamic": "^18.2.13",
-    "@angular/router": "^18.2.13",
+    "@angular/animations": "^19.2.6",
+    "@angular/common": "^19.2.6",
+    "@angular/compiler": "^19.2.6",
+    "@angular/core": "^19.2.6",
+    "@angular/forms": "^19.2.6",
+    "@angular/platform-browser": "^19.2.6",
+    "@angular/platform-browser-dynamic": "^19.2.6",
+    "@angular/router": "^19.2.6",
     "rxjs": "^7.4.0",
     "tslib": "^2.6.2",
-    "zone.js": "^0.14.10"
+    "zone.js": "^0.15.0"
   },
   "devDependencies": {
     "@angular-eslint/builder": "17.4.1",
@@ -27,9 +27,9 @@
     "@angular-eslint/eslint-plugin-template": "17.4.1",
     "@angular-eslint/schematics": "17.4.1",
     "@angular-eslint/template-parser": "17.4.1",
-    "@angular/build": "^18.2.18",
-    "@angular/cli": "^18.2.18",
-    "@angular/compiler-cli": "^18.2.13",
+    "@angular/build": "^19.2.7",
+    "@angular/cli": "^19.2.7",
+    "@angular/compiler-cli": "^19.2.6",
     "@eslint/js": "^9.2.0",
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "7.8.0",
@@ -38,7 +38,7 @@
     "eslint": "^8.57.0",
     "globals": "^15.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
+    "typescript": "^5.8.3",
     "typescript-eslint": "^7.9.0"
   },
   "type": "module"
