@@ -4,12 +4,8 @@ import { CommonModule } from '@angular/common';
 import { IdentityRoutingModule } from './identity-routing.module';
 import { IdentityComponent } from './identity/identity.component';
 
-
 @NgModule({
   declarations: [IdentityComponent],
-  imports: [
-    CommonModule,
-    IdentityRoutingModule
-  ]
+  imports: [CommonModule, IdentityRoutingModule],
 })
-export class IdentityModule { }
+export class IdentityModule {}

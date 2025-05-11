@@ -22,24 +22,23 @@
     "zone.js": "^0.15.0"
   },
   "devDependencies": {
-    "@angular-eslint/builder": "17.4.1",
-    "@angular-eslint/eslint-plugin": "17.4.1",
-    "@angular-eslint/eslint-plugin-template": "17.4.1",
-    "@angular-eslint/schematics": "17.4.1",
-    "@angular-eslint/template-parser": "17.4.1",
+    "@angular-eslint/builder": "^19.4.0",
+    "@angular-eslint/eslint-plugin": "^19.4.0",
+    "@angular-eslint/eslint-plugin-template": "^19.4.0",
+    "@angular-eslint/schematics": "^19.4.0",
+    "@angular-eslint/template-parser": "^19.4.0",
     "@angular/build": "^19.2.7",
-    "@angular/cli": "^19.2.7",
+    "@angular/cli": "^19.2.11",
     "@angular/compiler-cli": "^19.2.6",
     "@eslint/js": "^9.2.0",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
-    "codelyzer": "^6.0.2",
     "eslint": "^8.57.0",
     "globals": "^15.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^7.9.0"
+    "typescript": "^5.8.3"
   },
   "type": "module"
 }
