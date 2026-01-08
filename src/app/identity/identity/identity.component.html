@@ -9,9 +9,11 @@
   </div>
 
   <ul class="text-center p-3 pb-5 mb-5 pt-0">
-    <li class="icon" *ngFor="let link of links">
-      <a [href]="link.url" class="icon-link"><i [class]="link.icon"></i>
+    @for (link of links; track link) {
+      <li class="icon">
+        <a [href]="link.url" class="icon-link"><i [class]="link.icon"></i>
       </a>
     </li>
-  </ul>
+  }
+</ul>
 </div>
