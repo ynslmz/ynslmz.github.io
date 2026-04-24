@@ -2,8 +2,14 @@
 $backgroud-color: #303030;
 $text-color: #fff;
 
-body {
-  height: 100vh;
+html,
+body,
+#app {
+  height: 100%;
   width: 100%;
+}
+
+body {
+  margin: 0;
   background-color: $backgroud-color;
 }
