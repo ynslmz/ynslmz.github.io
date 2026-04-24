@@ -1,3 +1,10 @@
+<template>
+  <div class="container-fluid h-100">
+    <router-view />
+  </div>
+</template>
+
+<style lang="scss" scoped>
 html {
   font-size: 14px;
 }
@@ -11,3 +18,4 @@ html {
 .container {
   max-width: 960px;
 }
+</style>
