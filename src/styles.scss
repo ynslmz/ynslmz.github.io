@@ -1,15 +1,17 @@
 /* Importing Bootstrap SCSS file. */
-$backgroud-color: #303030;
+$background-color: #303030;
 $text-color: #fff;
 
-html,
-body,
-#app {
+html {
   height: 100%;
-  width: 100%;
+  background-color: $background-color;
 }
 
 body {
+  height: 100%;
   margin: 0;
-  background-color: $backgroud-color;
+}
+
+#app {
+  height: 100%;
 }
