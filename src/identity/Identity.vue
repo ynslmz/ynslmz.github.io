@@ -12,18 +12,18 @@ const links = [
 </script>
 
 <template>
-  <div class="d-flex flex-column justify-content-center align-items-center h-100">
-    <div class="p-3 pt-0 mx-auto text-center">
-      <h1 class="fs-1 fw-normal text-white">Yunus ÖLMEZ</h1>
-      <p class="fs-4 text-white">
+  <div class="identity">
+    <div class="text-center">
+      <h1 class="name">Yunus ÖLMEZ</h1>
+      <p class="tagline muted">
         Senior Software Developer with more than
         {{ currentYear - 2012 }} years of experience.
       </p>
-      <p class="fs-5 text-white"> Houten - Netherlands </p>
+      <p class="location muted">Houten - Netherlands</p>
     </div>
 
-    <ul class="text-center p-3 pb-5 mb-5 pt-0">
-      <li v-for="link in links" :key="link.url" class="icon">
+    <ul class="links">
+      <li v-for="link in links" :key="link.url">
         <a :href="link.url" class="icon-link">
           <i :class="link.icon"></i>
         </a>
@@ -33,32 +33,67 @@ const links = [
 </template>
 
 <style lang="scss" scoped>
-@use "../styles";
+.identity {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 5vh, 3rem);
+  padding: clamp(1rem, 4vw, 2rem);
+  box-sizing: border-box;
+}
 
-ul {
-  display: block;
+.muted {
+  color: var(--text-muted);
+}
+
+.name {
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+  line-height: 1.15;
+  font-size: clamp(1.75rem, 8vw, 3rem);
+}
+
+.tagline {
+  margin: 0 auto 0.5rem;
+  max-width: 22em;
+  line-height: 1.4;
+  font-size: clamp(1.05rem, 4.5vw, 1.5rem);
+}
+
+.location {
+  margin: 0;
+  font-size: clamp(0.95rem, 3.5vw, 1.25rem);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.5rem, 2.5vw, 1rem);
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-li {
-  display: inline-block;
-  position: relative;
-}
-
-.icon {
-  margin: 0.5em;
-  color: styles.$text-color;
-}
-
 .icon-link {
-  border: 1px solid #dddddd;
-  border-radius: 100%;
-  font-size: 1.75em;
-  color: styles.$text-color;
-  height: 2.5em;
-  width: 2.5em;
-  line-height: 2.5em;
-  text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4em;
+  height: 2.4em;
+  font-size: clamp(1rem, 4.5vw, 1.6rem);
+  color: var(--icon-color);
+  border: 1px solid var(--icon-border);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 </style>
