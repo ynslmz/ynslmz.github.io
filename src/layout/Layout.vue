@@ -1,21 +1,10 @@
+<script setup lang="ts">
+import ThemeToggle from '../components/ThemeToggle.vue';
+</script>
+
 <template>
-  <div class="container-fluid h-100">
+  <div class="h-100">
+    <ThemeToggle />
     <router-view />
   </div>
 </template>
-
-<style lang="scss" scoped>
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.container {
-  max-width: 960px;
-}
-</style>

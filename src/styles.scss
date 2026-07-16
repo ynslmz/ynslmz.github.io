@@ -1,15 +1,49 @@
-/* Importing Bootstrap SCSS file. */
-$background-color: #303030;
-$text-color: #fff;
+/* Theme tokens — light defaults on :root, dark overrides via [data-theme]. */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --text-muted: #495057;
+  --icon-color: #212529;
+  --icon-border: #ced4da;
+  --accent: #0d6efd;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --text-muted: #ced4da;
+  --icon-color: #f8f9fa;
+  --icon-border: #495057;
+  --accent: #4dabf7;
+  color-scheme: dark;
+}
+
+/* Fallback when JS is disabled and no explicit choice was stamped: follow the OS. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+    --text-muted: #ced4da;
+    --icon-color: #f8f9fa;
+    --icon-border: #495057;
+    --accent: #4dabf7;
+    color-scheme: dark;
+  }
+}
 
 html {
   height: 100%;
-  background-color: $background-color;
+  background-color: var(--bg-color);
 }
 
 body {
   height: 100%;
   margin: 0;
+  /* Override Bootstrap's body background/color so the theme tokens win. */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 #app {
